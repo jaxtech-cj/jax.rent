@@ -1,0 +1,60 @@
+Keyless Entry fa-ban fa-key, or fa-table-cells-column-unlock
+Parking fa-circle-parking
+2 Bedroom - fa-bed-front
+Heat fa-fire-flame-curved
+Backup Heat
+A/C fa-air-conditioner
+Shower fa-shower
+In-Floor Heating fa-heat
+Fireplace fa-fireplace
+Hair Dryer fa-wind
+Shampoo fa-pump-soap
+Conditioner fa-pump-soap
+Body Wash fa-pump-soap
+Internet Fibre Optic, fa-globe
+Wi-Fi  fa-wifi
+Smart TV fa-tv
+Blinds fa-shutters
+Kitchen fa-fork-knife
+Dishes - fa-kitchen-set
+Sink fa-sink
+Fridge fa-refrigerator
+Oven fa-oven
+Microwave fa-microwave
+Toaster fa-bread-slice
+Dishwasher fa-light fa-washing-machine
+Coffee Maker (Keurig)
+Hangers fa-clothes-hanger
+USB Receptacles (Type A & C) - fa-brands fa-usb
+Induction Chargers (QI) - fa-battery-bolt
+First Aid Kit fa-kit-medical
+Washer fa-washing-machine
+Dryer fa-dryer
+Living Room
+Couch - fa-couch
+Excersize Room - fa-regular fa-dumbbell
+Treadmill - fa-person-running
+Workout Bench
+Yoga Mat - fa-mattress-pillow
+Gazebo - 
+Bottled water (2x) fa-bottle-water
+
+fire extinguisher?
+firepit? fa-campfire
+
+Rules
+No Smoking fa-ban-smoking
+----
+Smart Lock - smartthings
+bungee cords
+Cleaner
+Thermostat
+First Aid Kit
+Dimmer light Rm1
+Fix light in Room1
+Camera on water meter
+Room 1 TV
+Room 1 Lock
+Room 2 flat screen mount TV, roku
+Room 2, hangers
+Security camera sync modules
