@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Jax BnB</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="shortcut icon" href="images/favicon.png">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-red.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+ <link rel="stylesheet" href="css/all.min.css">
+ <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+  .mySlides {display: none}
+  .jaxlogotext
+  {
+   color: #F55139;
+   font-size: 20pt;
+   font-weight: bold;
+  }
+  .sup
+  {
+   vertical-align: super;
+  }
+ </style>
+</head>
+<body class="w3-content w3-border-left w3-border-right">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
+ <div class="w3-container w3-display-container w3-padding-16">
+  <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
+  <h3><img src="images/jaxbnblogo.webp"></h3>
+  <div><span class="jaxlogotext">//</span> <span class="jaxlogotext w3-text-italic">JAX BnB</span></div>
+  <h3>Short Term Rentals</h3>
+  <h3>from $99</h3>
+  <h6>per night</h6>
+  <hr>
+  <p><button class="w3-button w3-block w3-theme w3-left-align" type="submit" disabled><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
+ </div>
+ <div class="w3-bar-block">
+
+ </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+ <span class="w3-bar-item">JAX BnB Short Term Rental</span>
+ <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-white" style="margin-left:260px">
+
+ <!-- Push down content on small screens -->
+ <div class="w3-hide-large" style="margin-top:80px"></div>
+
+ <!-- Slideshow Header -->
+ <div class="w3-container" id="apartment">
+  <h2 class="w3-text-theme">76 Victor</h2>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_front_exterior.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Front Exterior</p>
+   </div>
+  </div>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_upper_kitchen.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Upstairs Kitchen</p>
+   </div>
+  </div>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_living_room.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Living Room</p>
+   </div>
+  </div>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_bsmt_bathroom_sink.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Lower Bathroom</p>
+   </div>
+  </div>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_lower_recroom.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Lower Recroom</p>
+   </div>
+  </div>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_lower_kitchen.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Lower Kitchen</p>
+   </div>
+  </div>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_room1.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Bedroom 1</p>
+   </div>
+  </div>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_gym.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Exercise Room</p>
+   </div>
+  </div>
+  <div class="w3-display-container mySlides">
+   <img src="images/76V_rear_exterior.jpg" style="width:100%;margin-bottom:-6px">
+   <div class="w3-display-bottomleft w3-container w3-black">
+    <p>Rear Exterior</p>
+   </div>
+  </div>
+ </div>
+ <div class="w3-margin-left w3-section" style="width: 95%; height: 130px; overflow: scroll;">
+  <div class="w3-col s3" style="white-space: nowrap !important;">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_front_exterior.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Front Exterior">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_upper_kitchen.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Upper Kitchen">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_living_room.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Upper Living Room">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_bsmt_bathroom_sink.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Lower Bathroom">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_lower_recroom.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Lower Recroom">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_lower_kitchen.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)" title="Lower Kitchen">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_room1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(7)" title="Room 1">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_gym.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(8)" title="Exercise Room">
+   <img class="demo w3-opacity w3-hover-opacity-off" src="images/76V_rear_exterior.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(9)" title="Rear Exterior">
+  </div>
+ </div>
+
+ <div class="w3-container">
+  <h4><strong>Overview</strong></h4>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-bed"></i> Bedrooms: 2</p>
+    <p><i class="fa-solid fa-bath"></i> Bathrooms: 1</p>
+    <p><i class="fa-solid fa-person"></i> Max Occupancy: 4</p>
+    <p><i class="fa-solid fa-building"></i> Building Type: House</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-clock-three"></i> Check In: 3PM</p>
+    <p><i class="fa-solid fa-person-to-door"></i> Check Out: 11AM</p>
+    <p><i class="fa-solid fa-elevator"></i> Elevator: No</p>
+    <p><i class="fa-solid fa-map-location-dot"></i> Area: Minnow Lake</p>
+   </div>
+  </div>
+  <hr>
+
+  <h4><strong>Safety</strong></h4>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-camera-cctv"></i> Security Cameras (exterior)</p>
+    <p><i class="fa-solid fa-bolt-slash"></i> Arc Fault Receptacles (AFCI)</p>
+    <p><i class="fa-solid fa-kit-medical"></i> First Aid Kit</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-outlet"></i> Ground Fault Receptacles (GFCI)</p>
+    <p><i class="fa-solid fa-sensor-fire"></i> Interconnected Audible Smoke + Carbon Monoxide Detectors w/strobe</p>
+    <!--<p><i class="fa-solid fa-volume-high"></i> Decibel Monitor</p>-->
+    <!--<p><i class="fa-solid fa-fire-extinguisher"></i> Fire Extinguisher</p>-->
+   </div>
+  </div>
+  <hr>
+  <h4><strong>Amenities</strong></h4>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-table-cells-column-unlock"></i> Keyless Entry</p>
+    <p><i class="fa-solid fa-circle-parking"></i> Free Parking</p>
+    <p><i class="fa-solid fa-fire-flame-curved"></i> Heating</p>
+    <p><i class="fa-solid fa-globe"></i> Internet (fibre)</p>
+    <p><i class="fa-solid fa-tank-water"></i> Hot Water</p>
+    <p><i class="fa-solid fa-bin-recycle"></i> Recycle Bin</p>
+    <p><i class="fa-solid fa-outlet"></i> Exterior Outlet (EV Charge)</p>
+    </div>
+    <div class="w3-col s6">
+     <p><i class="fa-solid fa-image-user"></i> Self check-in</p>
+     <p><i class="fa-solid fa-bottle-water"></i> Bottled Water (x2)</p>
+     <p><i class="fa-solid fa-air-conditioner"></i> Air Conditioning</p>
+     <p><i class="fa-solid fa-wifi"></i> Wi-Fi</p>
+     <p><i class="fa-solid fa-stairs"></i> Illuminated Stairs<sup>*</sup></p>
+     <p><i class="fa-solid fa-trash"></i> Garbage Bin</p>
+     <p><i class="fa-solid fa-person-shelter"></i> Gazebo</p>
+    </div>
+   </div>
+
+   <h4><strong>Upper Kitchen</strong></h4>
+   <div class="w3-row w3-large">
+    <div class="w3-col s6">
+     <p><i class="fa-solid fa-oven"></i> Electric Oven</p>
+     <p><i class="fa-solid fa-refrigerator"></i> Fridge / Freezer</p>
+     <p><i class="fa-light fa-washing-machine"></i> Dishwasher</p>
+     <p><i class="fa-solid fa-microwave"></i> Microwave</p>
+     <p><i class="fa-solid fa-light-switch"></i> Dimmable Lighting</p>
+    </div>
+    <div class="w3-col s6">
+     <p><i class="fa-solid fa-sink"></i> Sink (double)</p>
+     <p><i class="fa-solid fa-coffee-pot"></i> Coffee Maker (Keurig)</p>
+     <p><i class="fa-solid fa-bread-slice"></i> Toaster</p>
+     <p><i class="fa-solid fa-chair"></i> Dining Table & Stools</p>
+     <p><i class="fa-solid fa-kitchen-set"></i> Dishes (plates, bowls, cups, silverware, pots & pans)</p>
+    </div>
+   </div>
+
+  <h4><strong>Upper Living Room</strong></h4>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-couch"></i> Reclining Couch</p>
+    <p><i class="fa-solid fa-tv"></i> Smart TV</p>
+    <p><i class="fa-solid fa-fireplace"></i> Gas Fireplace</p>
+    <p><i class="fa-solid fa-blinds-open"></i> Blinds</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-loveseat"></i> Reclining Chair</p>
+    <p><i class="fa-solid fa-speaker"></i> Sound Bar</p>
+    <p><i class="fa-solid fa-light-switch"></i> Dimmable Lights</p>
+   </div>
+  </div>
+
+  <h4><strong>Lower Living Room</strong></h4>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-couch"></i> Couch</p>
+    <p><i class="fa-solid fa-tv"></i> Smart TV</p>
+    <p><i class="fa-solid fa-light-switch"></i> Dimmable Lights</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-fireplace"></i> LED Fireplace</p>
+    <p><i class="fa-solid fa-speaker"></i> Sound Bar</p>
+    <p><i class="fa-solid fa-blinds"></i> Blinds</p>
+   </div>
+  </div>
+
+  <h4><strong>Lower Bathroom</strong></h4>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-toilet"></i> Toilet</p>
+    <p><i class="fa-solid fa-shower"></i> Shower</p>
+    <p><i class="fa-solid fa-sink"></i> Sink</p>
+    <p><i class="fa-solid fa-square"></i> Mirror (anti-fog)</p>
+    <p><i class="fa-solid fa-heat"></i> In-Floor Heating</p>
+    <p><i class="fa-brands fa-usb"></i> USB Receptacles (Type A & C)</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-toilet-paper-under"></i> Toilet Paper</p>
+    <p><i class="fa-solid fa-pump-soap"></i> Shampoo</p>
+    <p><i class="fa-solid fa-pump-soap"></i> Conditioner</p>
+    <p><i class="fa-solid fa-pump-soap"></i> Body Wash</p>
+    <p><i class="fa-solid fa-vent-damper"></i> Fan (on timer)</p>
+    <p><i class="fa-solid fa-outlet"></i> 20A Receptacle</p>
+   </div>
+  </div>
+
+  <h4><strong>Bedrooms</strong></h4>
+  <h5><strong><i class="fa-solid fa-bed"></i> Room 1</strong></h5>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-bed-front"></i> King Size Bed</p>
+    <p><i class="fa-regular fa-file-lines"></i> Bed Linens</p>
+    <p><i class="fa-solid fa-blinds"></i> Blinds</p>
+    <p><i class="fa-solid fa-cabinet-filing"></i> Closet (Illuminated)</p>
+    <p><i class="fa-brands fa-usb"></i> USB Receptacles (Type A & C)</p>
+    <p><i class="fa-solid fa-fireplace"></i> LED Fireplace</p>
+    <p><i class="fa-solid fa-light-switch"></i> Dimmable Lights</p>
+    <p><i class="fa-solid fa-person-through-window"></i> Egress Windows</p>
+    <p><i class="fa-solid fa-lock"></i> Lockable Door</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-mattress-pillow"></i> Memory Foam Mattress</p>
+    <p><i class="fa-light fa-rectangle-wide"></i> Pillows</p>
+    <p><i class="fa-solid fa-tv"></i> Smart TV</p>
+    <p><i class="fa-solid fa-clothes-hanger"></i> Hangers</p>
+    <p><i class="fa-solid fa-battery-bolt"></i> Induction chargers (Qi)</p>
+    <p><i class="fa-solid fa-air-conditioner"></i> Dedicated Heat / AC</p>
+    <p><i class="fa-solid fa-palette"></i> Colour LED Lights</p>
+    <p><i class="fa-solid fa-sensor-fire"></i> Smoke+CO Detector w/strobe</p>
+   </div>
+  </div>
+
+  <h5><strong><i class="fa-solid fa-bed"></i> Room 2</strong></h5>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-bed-front"></i> Queen Size Bed</p>
+    <p><i class="fa-regular fa-file-lines"></i> Bed Linens</p>
+    <p><i class="fa-solid fa-cabinet-filing"></i> Closet (Illuminated)</p>
+    <p><i class="fa-brands fa-usb"></i> USB Receptacles (Type A & C)</p>
+    <p><i class="fa-solid fa-person-through-window"></i> Egress Windows</p>
+    <p><i class="fa-solid fa-light-switch"></i> Dimmable Lights</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-tv"></i> Smart TV</p>
+    <p><i class="fa-light fa-rectangle-wide"></i> Pillows</p>
+    <p><i class="fa-solid fa-clothes-hanger"></i> Hangers</p>
+    <p><i class="fa-solid fa-blinds"></i> Blinds / Curtains</p>
+    <p><i class="fa-solid fa-sensor-fire"></i> Smoke+CO Detector w/strobe</p>
+   </div>
+  </div>
+
+  <h4><strong>Laundry</strong></h4>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-washing-machine"></i> Washing Machine</p>
+    <p><i class="fa-solid fa-bars"></i> Drying Rack</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-dryer"></i> Dryer</p>
+    <p><i class="fa-solid fa-ban"></i> Iron: No</p>
+   </div>
+  </div>
+
+  <h4><strong>Exercise Room</strong></h4>
+  <div class="w3-row w3-large">
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-person-running"></i> Treadmill</p>
+    <p><i class="fa-regular fa-dumbbell"></i> Weights*</p>
+   </div>
+   <div class="w3-col s6">
+    <p><i class="fa-solid fa-horizontal-rule"></i> Workout Bench</p>
+    <p><i class="fa-solid fa-mattress-pillow"></i> Yoga Mat</p>
+   </div>
+  </div>
+
+  <p><span style="font-size: 30pt;">*</span> denotes a feature coming soon</p>
+  <hr>
+
+  <h4><strong>Additional Information</strong></h4>
+  <h4><i class="fa-solid fa-bus"></i> Bus Information</h4>
+  <p>Near Bus Stop (Bus #10)</p>
+  <p><i class="fa-solid fa-map"></i> <a href="https://www.greatersudbury.ca/sites/sudburyen/assets/Image/Transit/maps/Route-10-Minnow-Lake.png" target="_blank">Bus #10 Route Map</a></p>
+  <p><i class="fa-solid fa-calendar-days"></i> <a href="https://www.greatersudbury.ca/live/transit/gova-routes-and-schedules/all-combined-june-14th-2025/routes-june-14th-2025/route-10-minnow-lake/" target="_blank">Schedule</a> - Effective June 14, 2025</p>
+  <h4><i class="fa-solid fa-taxi"></i> Ride Service</h4>
+  <ul>
+   <li><a href="https://www.uride.co/" target="_blank">uride</a></li>
+   <li><a href="https://www.uride.co/" target="_blank">Aaron Taxi</a> <i class="fa-solid fa-phone"></i> <a href="tel:+17055233333">705-523-3333</a></li>
+   <li><a href="https://www.lockerbytransportation.com/" target="_blank">Lockerby Taxi</a> <i class="fa-solid fa-phone"></i> <a href="tel:+17055552222">705-555-2222</a></li>
+   <li><a href="https://www.yellowpages.ca/bus/Ontario/Garson/Garson-Nickel-Centre-Taxi/7820896.html" target="_blank">Garson Nickel Centre Taxi</a> <i class="fa-solid fa-phone"></i> <a href="tel:+17056930038">705-693-0038</a></li>
+  </ul>
+  <h4><i class="fa-solid fa-laptop-arrow-down"></i> Apps</h4>
+  <p><i class="fa-solid fa-lightbulb-on"></i> Globe Suite App for Lower Bathroom Lights<br/>
+   <a href="https://apps.apple.com/ca/app/globe-suite/id1418410758" target="_blank">iOS: <i class="fa-brands fa-app-store-ios"></i></a>
+   <a href="https://play.google.com/store/apps/details?id=com.globe.electric&hl=en_CA&pli=1" target="_blank">Android: <i class="fa-brands fa-google-play"></i></a></p>
+  <!--<p><i class="fa-solid fa-lightbulb-on"></i> Smart Life for Lower Level Lights <a href="https://apps.apple.com/us/app/smart-life-smart-living/id1115101477" target="_blank">iOS</a></p>-->
+  <p><i class="fa-solid fa-tv"></i> Amazon Fire TV App for Lower Living Room TV<br/>
+   <a href="https://apps.apple.com/ca/app/amazon-fire-tv/id947984433" target="_blank">iOS: <i class="fa-brands fa-app-store-ios"></i></a>
+   <a href="https://play.google.com/store/apps/details?id=com.amazon.storm.lightning.client.aosp&hl=en_CA" target="_blank">Android: <i class="fa-brands fa-google-play"></i></a></p>
+  <h4>Accessibility</h4>
+  <p><i class="fa fa-fw fa-wheelchair"></i> Wheelchair Accessible: No</p>
+  <p><i class="fa-solid fa-ear-deaf"></i>Hearing Impaired: Strobe indicating smoke + CO detectors</p>
+  <p><i class="fa-solid fa-faucet"></i>Touchless Upper Kitchen Faucet</p>
+  <h4>Nearby Restaurants</h4>
+  <ul>
+   <li>Boston Pizza</li>
+   <li>Milestones</li>
+   <li>Montana's</li>
+   <li>Toppers Pizza</li>
+   <li>MIC's Eatery</li>
+   <li>Stacked Breakfast House</li>
+  </ul>
+  <h4>Groceries</h4>
+  <ul>
+   <li>Rexall</li>
+   <li>Costco</li>
+   <li>Food Basics</li>
+   <li>Real Canadian Superstore</li>
+  </ul>
+  <h4>Things To Do</h4>
+  <ul>
+   <li>Cineplex SilverCity Cinema</li>
+   <li>Trevi Bar & Grill</li>
+   <li>Science North</li>
+   <li>Dynamic Earth</li>
+   <li>Big Nickel</li>
+   <li>IMAX</li>
+   <li>Sudbury Theatre Centre (YES Theatre)</li>
+   <li>Go Karts</li>
+   <li>Mini Putt</li>
+   <li>Hiking Trails</li>
+   <li>Lakes</li>
+   <li>Adanac Ski Hill</li>
+   <li>Gateway Casino</li>
+  </ul>
+  See <a href="https://discoversudbury.ca/" target="_blank">Discover Sudbury</a> for a comprehensive listing
+  <hr>
+
+  <h4><strong><i class="fa-solid fa-clipboard-list"></i> Rules</strong></h4>
+  <ol>
+   <li>No smoking inside the house</li>
+   <li>No pets</li>
+   <li>No shoes inside the house</li>
+   <li>Wash and put away any dishes used</li>
+   <li>Leave towels on bathroom floor</li>
+   <li>Place recyclable items in the large recycle bin outside</li>
+   <li>Place compostable items in compostable bag in green bin outside</li>
+   <li>Lock doors and windows upon leaving</li>
+   <li>Turn off all lights upon leaving</li>
+   <li>Turn off all electronics upon leaving</li>
+   <li>No parties</li>
+   <li>No loud sounds beyond 9pm EST in accordance with <a href="https://www.greatersudbury.ca/city-hall/by-laws/by-law-2018-29/" target="_blank">By-law 2018-29</a></li>
+   <li>No unregistered overnight guests</li>
+   <li>No use of BBQ</li>
+   <li>No access to off-limit areas</li>
+   <li>No rearranging of furniture</li>
+   <li>All illegal activities, not limited to the use of illegal substances, are strictly prohibited in accordance with the <a href="https://laws-lois.justice.gc.ca/eng/acts/c-46/" target="_blank">Criminal Code of Canada</a></li>
+  </ol>
+  <div><i class="fa-solid fa-book"></i> Reference:</div>
+  <ul>
+   <li>Greater City of Sudbury <a href="https://www.greatersudbury.ca/city-hall/by-laws/" target="_blank">By-Laws</a></li>
+   <li><a href="https://www.airbnb.ca/help/feature/1" target="_blank">AirBnb Policies</a></li>
+   <li><a href="https://laws-lois.justice.gc.ca/eng/acts/c-46/" target="_blank">Criminal Code of Canada</a></li>
+  </ul>
+
+  <p><button class="w3-button w3-theme w3-third">Bathrooms</button></p>
+ </div>
+ <hr>
+
+ <!-- Contact -->
+ <div class="w3-container" id="contact">
+  <h2>Contact</h2>
+  <i class="fa fa-map-marker w3-margin-right"></i>76 Victor St., Sudbury, ON. P3B 3R2<br>
+  <i class="fa-solid fa-phone w3-margin-right "></i>Phone number provided through AirBnb reservation<br>
+  <!--<p>Questions? Go ahead, ask them:</p>
+  <form action="/action_page.php" target="_blank">
+   <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+   <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+   <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+   <button type="submit" class="w3-button w3-green w3-third">Send a Message</button>
+  </form>-->
+ </div>
+
+ <footer class="w3-container w3-padding-16" style="margin-top:32px"></footer>
+
+ <!-- End page content -->
+</div>
+
+<script>
+ // Script to open and close sidebar when on tablets and phones
+ function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+ }
+
+ function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+ }
+
+ // Slideshow Apartment Images
+ var slideIndex = 1;
+ showDivs(slideIndex);
+
+ function plusDivs(n) {
+  showDivs(slideIndex += n);
+ }
+
+ function currentDiv(n) {
+  showDivs(slideIndex = n);
+ }
+
+ function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+   dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+ }
+</script>
+
+</body>
+</html>
